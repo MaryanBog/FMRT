@@ -1,0 +1,57 @@
+# ================================
+# FMRT Core — Git Ignore
+# ================================
+
+# Build directories
+build/
+out/
+cmake-build-*/
+CMakeFiles/
+
+# CMake cache & scripts
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Compiled objects
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.exp
+*.pdb
+*.so
+*.dylib
+
+# Executables
+fmrt_tests
+fmrt_tests.exe
+
+# Visual Studio / Windows
+.vs/
+*.user
+*.suo
+*.VC.db
+*.opendb
+x64/
+Win32/
+Release/
+Debug/
+
+# Ninja
+.ninja_deps
+.ninja_log
+
+# Temporary / logs
+*.log
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp

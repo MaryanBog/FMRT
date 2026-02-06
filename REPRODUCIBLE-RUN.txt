@@ -1,0 +1,92 @@
+$ rm -rf build && mkdir build && cd build && cmake -G "Ninja" .. && ninja && ./fmrt_tests
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Strawberry/c/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (0.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: D:/Work/Flexionization/Flexion-Core/FMRT/build
+[1/44] Building CXX object CMakeFiles/fmrt_core.dir/src/diagnostics.cpp.obj
+D:/Work/Flexionization/Flexion-Core/FMRT/src/diagnostics.cpp:1:9: warning: #pragma once in main file
+    1 | #pragma once
+      |         ^~~~
+[2/44] Building CXX object CMakeFiles/fmrt_core.dir/src/fp_guard.cpp.obj
+[3/44] Building CXX object CMakeFiles/fmrt_core.dir/src/event_handler.cpp.obj
+[4/44] Building CXX object CMakeFiles/fmrt_core.dir/src/invariant_validator.cpp.obj
+[5/44] Building CXX object CMakeFiles/fmrt_core.dir/src/fmrt_api.cpp.obj
+[6/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/fmrt_tests.cpp.obj
+[7/44] Building CXX object CMakeFiles/fmrt_core.dir/src/evolution_engine.cpp.obj
+[8/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_algorithm_kappa_decay.cpp.obj
+[9/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_algorithm_delta.cpp.obj
+[10/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_algorithm_det_g.cpp.obj
+[11/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_algorithm_phi.cpp.obj
+[12/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_algorithm_tau.cpp.obj
+[13/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_collapse_after_stress_sequence.cpp.obj
+[14/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_collapse_under_gap.cpp.obj
+[15/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_collapse_trigger_boundary.cpp.obj
+[16/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_collapse_under_heartbeat.cpp.obj
+[17/44] Linking CXX static library libfmrt_core.a
+[18/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_gap_relax.cpp.obj
+[19/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_determinism_multi_run.cpp.obj
+[20/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_determinism_no_hidden_state.cpp.obj
+[21/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_determinism_single_run.cpp.obj
+[22/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_heartbeat.cpp.obj
+[23/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_gap_sequence_stability.cpp.obj
+[24/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_heartbeat_high_memory.cpp.obj
+[25/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_invariant_forbidden_domain.cpp.obj
+[26/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_invariant_collapse_geometry.cpp.obj
+[27/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_invariant_memory.cpp.obj
+[28/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_invariant_kappa_nonnegative.cpp.obj
+[29/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_invariant_metric_positivity.cpp.obj
+[30/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_invariant_morphology.cpp.obj
+[31/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_invariant_regime_irreversible.cpp.obj
+[32/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_invariant_tau.cpp.obj
+[33/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_numeric_reject_NaN.cpp.obj
+D:/Work/Flexionization/Flexion-Core/FMRT/tests/test_numeric_reject_NaN.cpp:1:9: warning: #pragma once in main file
+    1 | #pragma once
+      |         ^~~~
+[34/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_numeric_reject_denormals.cpp.obj
+[35/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_regime_transitions.cpp.obj
+[36/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_numeric_reject_inf.cpp.obj
+[37/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_numeric_underflow_overflow_safety.cpp.obj
+[38/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_update_high_stress.cpp.obj
+[39/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_reset.cpp.obj
+[40/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_update_small_deformation.cpp.obj
+[41/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_reset_in_REL.cpp.obj
+[42/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_reset_after_collapse.cpp.obj
+[43/44] Building CXX object CMakeFiles/fmrt_tests.dir/tests/test_update_medium_stress.cpp.obj
+[44/44] Linking CXX executable fmrt_tests.exe
+Memory invariant OK. M_old=100 M_new=100
+Kappa invariant OK. κ_new=0
+Metric determinant invariant OK. det_g=0.499822
+Tau invariant OK. tau=0.44978
+Morphology invariant OK. mu=0.690649
+Regime irreversibility invariant OK.
+Collapse geometry invariant OK.
+Forbidden domain invariant OK.
+Algorithmic Δ update OK.
+Algorithmic Φ update OK.
+Algorithmic det_g update OK.
+Algorithmic τ update OK.
+Medium stress UPDATE OK.
+GAP sequence stability OK.
+Heartbeat high memory OK.
+Reset in REL OK.
+Reset after collapse OK.
+Running numeric_reject_NaN...
+numeric_reject_NaN OK.
+Running numeric_reject_INF...
+numeric_reject_INF OK
+Running numeric_reject_denormals...
+numeric_reject_denormals OK
+Running numeric_underflow_overflow_safety...
+numeric_underflow_overflow_safety OK
+Running determinism_single_run...
+determinism_single_run OK
+Running determinism_multi_run...
+determinism_multi_run OK
+Running determinism_no_hidden_state...
+determinism_no_hidden_state OK
+ALL TESTS PASSED
